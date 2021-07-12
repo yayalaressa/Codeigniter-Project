@@ -48,6 +48,12 @@ function save_config($data = array(), $new = array())
     return file_put_contents($config_file, $string);
 }
 
+function offline()
+{
+	echo "Site is offline!";
+	die;
+}
+
 // Copy folder and files
 function copy_folders($oldfolder, $newfolder)
 {
